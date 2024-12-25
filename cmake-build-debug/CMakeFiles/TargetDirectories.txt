@@ -1,0 +1,3 @@
+C:/Users/Tobi/Desktop/TChess/cmake-build-debug/CMakeFiles/TChess.dir
+C:/Users/Tobi/Desktop/TChess/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Tobi/Desktop/TChess/cmake-build-debug/CMakeFiles/rebuild_cache.dir
