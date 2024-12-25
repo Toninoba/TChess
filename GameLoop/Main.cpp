@@ -3,7 +3,7 @@
 //
 
 #include "iostream"
-#include "RenderWindow.h"
+#include "../RenderWindow/RenderWindow.h"
 #include <SDL.h>
 
 
