@@ -11,6 +11,7 @@ include_directories(${SDL2_INCLUDE_DIR})
 
 
 add_executable(TChess
-        Main.cpp)
+        Main.cpp
+        RenderWindow.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY})
