@@ -12,6 +12,7 @@ include_directories(${SDL2_INCLUDE_DIR})
 
 add_executable(TChess
         GameLoop/Main.cpp
-        RenderWindow/RenderWindow.cpp)
+        RenderWindow/RenderWindow.cpp
+        Board/Board.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY})

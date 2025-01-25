@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/Board/Board.cpp">
+			<Option target="TChess"/>
+		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/Board/Board.h">
+			<Option target="TChess"/>
+		</Unit>
 		<Unit filename="C:/Users/Tobi/Desktop/TChess/GameLoop/Main.cpp">
 			<Option target="TChess"/>
 		</Unit>

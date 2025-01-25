@@ -128,6 +128,30 @@ TChess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/build
 .PHONY : TChess/fast
 
+Board/Board.obj: Board/Board.cpp.obj
+.PHONY : Board/Board.obj
+
+# target to build an object file
+Board/Board.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/Board/Board.cpp.obj
+.PHONY : Board/Board.cpp.obj
+
+Board/Board.i: Board/Board.cpp.i
+.PHONY : Board/Board.i
+
+# target to preprocess a source file
+Board/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/Board/Board.cpp.i
+.PHONY : Board/Board.cpp.i
+
+Board/Board.s: Board/Board.cpp.s
+.PHONY : Board/Board.s
+
+# target to generate assembly for a file
+Board/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/Board/Board.cpp.s
+.PHONY : Board/Board.cpp.s
+
 GameLoop/Main.obj: GameLoop/Main.cpp.obj
 .PHONY : GameLoop/Main.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... TChess
+	@echo ... Board/Board.obj
+	@echo ... Board/Board.i
+	@echo ... Board/Board.s
 	@echo ... GameLoop/Main.obj
 	@echo ... GameLoop/Main.i
 	@echo ... GameLoop/Main.s

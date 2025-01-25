@@ -19,6 +19,13 @@ RenderWindow::RenderWindow(const char *p_title, int p_w, int p_h)
     }
 
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+    SDL_Surface *image = SDL_LoadBMP("board.bmp");
+
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, image);
+
+    SDL_RenderCopy(renderer, texture, NULL, NULL);
+    SDL_RenderPresent(renderer);
 }
 
 void RenderWindow::cleanUp() {
