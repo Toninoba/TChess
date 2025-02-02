@@ -200,6 +200,54 @@ RenderWindow/RenderWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.s
 .PHONY : RenderWindow/RenderWindow.cpp.s
 
+moveLogic/Move.obj: moveLogic/Move.cpp.obj
+.PHONY : moveLogic/Move.obj
+
+# target to build an object file
+moveLogic/Move.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj
+.PHONY : moveLogic/Move.cpp.obj
+
+moveLogic/Move.i: moveLogic/Move.cpp.i
+.PHONY : moveLogic/Move.i
+
+# target to preprocess a source file
+moveLogic/Move.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/Move.cpp.i
+.PHONY : moveLogic/Move.cpp.i
+
+moveLogic/Move.s: moveLogic/Move.cpp.s
+.PHONY : moveLogic/Move.s
+
+# target to generate assembly for a file
+moveLogic/Move.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/Move.cpp.s
+.PHONY : moveLogic/Move.cpp.s
+
+pieces/Piece.obj: pieces/Piece.cpp.obj
+.PHONY : pieces/Piece.obj
+
+# target to build an object file
+pieces/Piece.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/pieces/Piece.cpp.obj
+.PHONY : pieces/Piece.cpp.obj
+
+pieces/Piece.i: pieces/Piece.cpp.i
+.PHONY : pieces/Piece.i
+
+# target to preprocess a source file
+pieces/Piece.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/pieces/Piece.cpp.i
+.PHONY : pieces/Piece.cpp.i
+
+pieces/Piece.s: pieces/Piece.cpp.s
+.PHONY : pieces/Piece.s
+
+# target to generate assembly for a file
+pieces/Piece.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/pieces/Piece.cpp.s
+.PHONY : pieces/Piece.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +266,12 @@ help:
 	@echo ... RenderWindow/RenderWindow.obj
 	@echo ... RenderWindow/RenderWindow.i
 	@echo ... RenderWindow/RenderWindow.s
+	@echo ... moveLogic/Move.obj
+	@echo ... moveLogic/Move.i
+	@echo ... moveLogic/Move.s
+	@echo ... pieces/Piece.obj
+	@echo ... pieces/Piece.i
+	@echo ... pieces/Piece.s
 .PHONY : help
 
 

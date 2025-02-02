@@ -20,15 +20,21 @@ int main(int argc, char* argv[]){
 
     SDL_Init(SDL_INIT_EVERYTHING);
 
-    Board playingBoard = Board();
+    std::string fen = "4k2r/6r1/8/8/8/8/3R4/R3K3 w Qk - 0 1";
 
-    for (int i = 0; i < playingBoard.board.size(); ++i) {
-        if(i % 10 == 0){
-            std::cout << "" <<std::endl;
-        }
-        std::cout << playingBoard.board[i] << "  ";
+    Board playingBoard = Board(fen);
 
-    }
+    //playingBoard.printBoard(playingBoard);
+
+
+
+
+
+
+
+
+
+
 
     RenderWindow window("Test1", 800, 800);
 

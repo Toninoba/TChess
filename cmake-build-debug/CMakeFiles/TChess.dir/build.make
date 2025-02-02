@@ -98,23 +98,74 @@ CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tobi\Desktop\TChess\RenderWindow\RenderWindow.cpp -o CMakeFiles\TChess.dir\RenderWindow\RenderWindow.cpp.s
 
+CMakeFiles/TChess.dir/Board/Board.cpp.obj: CMakeFiles/TChess.dir/flags.make
+CMakeFiles/TChess.dir/Board/Board.cpp.obj: CMakeFiles/TChess.dir/includes_CXX.rsp
+CMakeFiles/TChess.dir/Board/Board.cpp.obj: C:/Users/Tobi/Desktop/TChess/Board/Board.cpp
+CMakeFiles/TChess.dir/Board/Board.cpp.obj: CMakeFiles/TChess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tobi\Desktop\TChess\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TChess.dir/Board/Board.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TChess.dir/Board/Board.cpp.obj -MF CMakeFiles\TChess.dir\Board\Board.cpp.obj.d -o CMakeFiles\TChess.dir\Board\Board.cpp.obj -c C:\Users\Tobi\Desktop\TChess\Board\Board.cpp
+
+CMakeFiles/TChess.dir/Board/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TChess.dir/Board/Board.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tobi\Desktop\TChess\Board\Board.cpp > CMakeFiles\TChess.dir\Board\Board.cpp.i
+
+CMakeFiles/TChess.dir/Board/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TChess.dir/Board/Board.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tobi\Desktop\TChess\Board\Board.cpp -o CMakeFiles\TChess.dir\Board\Board.cpp.s
+
+CMakeFiles/TChess.dir/pieces/Piece.cpp.obj: CMakeFiles/TChess.dir/flags.make
+CMakeFiles/TChess.dir/pieces/Piece.cpp.obj: CMakeFiles/TChess.dir/includes_CXX.rsp
+CMakeFiles/TChess.dir/pieces/Piece.cpp.obj: C:/Users/Tobi/Desktop/TChess/pieces/Piece.cpp
+CMakeFiles/TChess.dir/pieces/Piece.cpp.obj: CMakeFiles/TChess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tobi\Desktop\TChess\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TChess.dir/pieces/Piece.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TChess.dir/pieces/Piece.cpp.obj -MF CMakeFiles\TChess.dir\pieces\Piece.cpp.obj.d -o CMakeFiles\TChess.dir\pieces\Piece.cpp.obj -c C:\Users\Tobi\Desktop\TChess\pieces\Piece.cpp
+
+CMakeFiles/TChess.dir/pieces/Piece.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TChess.dir/pieces/Piece.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tobi\Desktop\TChess\pieces\Piece.cpp > CMakeFiles\TChess.dir\pieces\Piece.cpp.i
+
+CMakeFiles/TChess.dir/pieces/Piece.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TChess.dir/pieces/Piece.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tobi\Desktop\TChess\pieces\Piece.cpp -o CMakeFiles\TChess.dir\pieces\Piece.cpp.s
+
+CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj: CMakeFiles/TChess.dir/flags.make
+CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj: CMakeFiles/TChess.dir/includes_CXX.rsp
+CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj: C:/Users/Tobi/Desktop/TChess/moveLogic/Move.cpp
+CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj: CMakeFiles/TChess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tobi\Desktop\TChess\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj -MF CMakeFiles\TChess.dir\moveLogic\Move.cpp.obj.d -o CMakeFiles\TChess.dir\moveLogic\Move.cpp.obj -c C:\Users\Tobi\Desktop\TChess\moveLogic\Move.cpp
+
+CMakeFiles/TChess.dir/moveLogic/Move.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TChess.dir/moveLogic/Move.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tobi\Desktop\TChess\moveLogic\Move.cpp > CMakeFiles\TChess.dir\moveLogic\Move.cpp.i
+
+CMakeFiles/TChess.dir/moveLogic/Move.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TChess.dir/moveLogic/Move.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tobi\Desktop\TChess\moveLogic\Move.cpp -o CMakeFiles\TChess.dir\moveLogic\Move.cpp.s
+
 # Object files for target TChess
 TChess_OBJECTS = \
 "CMakeFiles/TChess.dir/GameLoop/Main.cpp.obj" \
-"CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.obj"
+"CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.obj" \
+"CMakeFiles/TChess.dir/Board/Board.cpp.obj" \
+"CMakeFiles/TChess.dir/pieces/Piece.cpp.obj" \
+"CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj"
 
 # External object files for target TChess
 TChess_EXTERNAL_OBJECTS =
 
 TChess.exe: CMakeFiles/TChess.dir/GameLoop/Main.cpp.obj
 TChess.exe: CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.obj
+TChess.exe: CMakeFiles/TChess.dir/Board/Board.cpp.obj
+TChess.exe: CMakeFiles/TChess.dir/pieces/Piece.cpp.obj
+TChess.exe: CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj
 TChess.exe: CMakeFiles/TChess.dir/build.make
 TChess.exe: C:/SDL2-2.30.8/x86_64-w64-mingw32/lib/libSDL2main.a
 TChess.exe: C:/SDL2-2.30.8/x86_64-w64-mingw32/lib/libSDL2.dll.a
 TChess.exe: CMakeFiles/TChess.dir/linkLibs.rsp
 TChess.exe: CMakeFiles/TChess.dir/objects1.rsp
 TChess.exe: CMakeFiles/TChess.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Tobi\Desktop\TChess\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TChess.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Tobi\Desktop\TChess\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TChess.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TChess.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

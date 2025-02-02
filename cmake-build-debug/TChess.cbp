@@ -99,6 +99,18 @@
 		<Unit filename="C:/Users/Tobi/Desktop/TChess/RenderWindow/RenderWindow.h">
 			<Option target="TChess"/>
 		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/moveLogic/Move.cpp">
+			<Option target="TChess"/>
+		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/moveLogic/Move.h">
+			<Option target="TChess"/>
+		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/pieces/Piece.cpp">
+			<Option target="TChess"/>
+		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/pieces/Piece.h">
+			<Option target="TChess"/>
+		</Unit>
 		<Unit filename="C:/Users/Tobi/Desktop/TChess/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
