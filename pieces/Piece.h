@@ -7,14 +7,16 @@
 
 #include <string>
 
-
+/**
+ * The Piece class is more or less used as a data structure to make it easier for move generation and evaluation
+ * I kept it all in one Class and didnt make a Class for each one since i want to keep it compactor
+ */
 class Piece {
 
 
 public:
 
     enum Type {
-        EMPTY,
         ROOK,
         KNIGHT,
         BISHOP,
@@ -26,12 +28,9 @@ public:
     int value;
     enum Type type;
     int color;
+    int pos;
 
-    Piece() : color(0), type(EMPTY), value(0) {}
-
-    Piece(int value, enum Type type, int color);
-
-
+    Piece(int value, enum Type type, int color, int pos) : color(color), type(type), value(value), pos(pos) {}
 };
 
 

@@ -6,11 +6,3 @@
 
 
 
-
-
-Piece::Piece(int value, Piece::Type type, int color) {
-    this->value = value;
-    this->type = type;
-    this->color = color;
-}
-

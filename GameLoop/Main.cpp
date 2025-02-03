@@ -20,11 +20,11 @@ int main(int argc, char* argv[]){
 
     SDL_Init(SDL_INIT_EVERYTHING);
 
-    std::string fen = "4k2r/6r1/8/8/8/8/3R4/R3K3 w Qk - 0 1";
+    std::string fen = "n7/q7/3p2p1/3pR3/p3pR2/pP2B2K/1k3P2/2N5 w - - 0 1";
 
     Board playingBoard = Board(fen);
 
-    //playingBoard.printBoard(playingBoard);
+    Board::printBoard(playingBoard);
 
 
 
