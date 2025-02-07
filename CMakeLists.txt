@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.28)
 project(TChess)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake_modules)
 
 set(SDL2_PATH "C:/SDL2-2.30.8/x86_64-w64-mingw32")

@@ -32,7 +32,7 @@ void Board::printBoard(const Board &b) {
             char pieceChar;
 
             if (b.board[pos]) {
-                Piece &p = *b.board[pos];
+                Piece &p = *b.board[pos].value();
 
                 switch (p.type) {
 
@@ -199,5 +199,34 @@ void Board::parseFen(const std::string &fen) {
         parserPos++;
     }
     this->fullMoveClock = std::stoi(fullMoveClockString);
+}
+
+void Board::removePiece(int pos) {
+    if(pos < 0 || pos > 63){
+        return;
+    }
+
+    if(!board[pos]) return;
+
+    std::optional<Piece*> toRemove = board[pos];
+    // Delete Piece reference from board
+    board[pos] = std::nullopt;
+
+    std::vector<std::unique_ptr<Piece>>* toRemoveList = nullptr;
+    // Decide which List the Piece should be removed from
+    if(toRemove.value()->color == -1){
+        toRemoveList = &blackPieces;
+    }
+    else {
+        toRemoveList = &whitePieces;
+    }
+
+    // Remove Piece from List if it matches the pointer from the board array
+    auto it = std::remove_if(toRemoveList->begin(), toRemoveList->end(),
+                             [toRemove](const std::unique_ptr<Piece>& p) {
+                                 return p.get() == toRemove;
+                             });
+
+    toRemoveList->erase(it, toRemoveList->end());
 }
 

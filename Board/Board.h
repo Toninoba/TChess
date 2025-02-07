@@ -12,6 +12,8 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include <optional>
+#include <algorithm>
 
 /**
  * Board stores one Object of type array. This 64 piece long array stores pointers to Pieces (nullptr for emtpy tiles) and a pointer to
@@ -28,7 +30,7 @@ class Board {
 
 public:
 
-    std::array<Piece*, 64> board{};
+    std::array<std::optional<Piece*>, 64> board{};
     int turnToMove{};
     bool castlingWhiteK{};
     bool castlingWhiteQ{};
@@ -46,6 +48,8 @@ public:
     explicit Board(const std::string& fen);
 
     static void printBoard(const Board& b);
+
+    void removePiece(int pos);
 
 private:
 

@@ -7,6 +7,7 @@
 #include <SDL.h>
 #include "../Board/Board.h"
 #include <windows.h>
+#include <cstdlib>
 
 
 int main(int argc, char* argv[]){
@@ -22,9 +23,12 @@ int main(int argc, char* argv[]){
 
     std::string fen = "n7/q7/3p2p1/3pR3/p3pR2/pP2B2K/1k3P2/2N5 w - - 0 1";
 
-    Board playingBoard = Board(fen);
+    Board playingBoard = Board();
 
     Board::printBoard(playingBoard);
+
+
+
 
 
 
