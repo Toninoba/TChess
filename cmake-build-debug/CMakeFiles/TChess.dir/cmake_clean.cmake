@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.obj.d"
   "CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj"
   "CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj.d"
+  "CMakeFiles/TChess.dir/moveLogic/MoveGenerator.cpp.obj"
+  "CMakeFiles/TChess.dir/moveLogic/MoveGenerator.cpp.obj.d"
   "CMakeFiles/TChess.dir/pieces/Piece.cpp.obj"
   "CMakeFiles/TChess.dir/pieces/Piece.cpp.obj.d"
   "TChess.exe"

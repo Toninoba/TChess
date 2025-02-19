@@ -224,6 +224,30 @@ moveLogic/Move.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/Move.cpp.s
 .PHONY : moveLogic/Move.cpp.s
 
+moveLogic/MoveGenerator.obj: moveLogic/MoveGenerator.cpp.obj
+.PHONY : moveLogic/MoveGenerator.obj
+
+# target to build an object file
+moveLogic/MoveGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/MoveGenerator.cpp.obj
+.PHONY : moveLogic/MoveGenerator.cpp.obj
+
+moveLogic/MoveGenerator.i: moveLogic/MoveGenerator.cpp.i
+.PHONY : moveLogic/MoveGenerator.i
+
+# target to preprocess a source file
+moveLogic/MoveGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/MoveGenerator.cpp.i
+.PHONY : moveLogic/MoveGenerator.cpp.i
+
+moveLogic/MoveGenerator.s: moveLogic/MoveGenerator.cpp.s
+.PHONY : moveLogic/MoveGenerator.s
+
+# target to generate assembly for a file
+moveLogic/MoveGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TChess.dir\build.make CMakeFiles/TChess.dir/moveLogic/MoveGenerator.cpp.s
+.PHONY : moveLogic/MoveGenerator.cpp.s
+
 pieces/Piece.obj: pieces/Piece.cpp.obj
 .PHONY : pieces/Piece.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... moveLogic/Move.obj
 	@echo ... moveLogic/Move.i
 	@echo ... moveLogic/Move.s
+	@echo ... moveLogic/MoveGenerator.obj
+	@echo ... moveLogic/MoveGenerator.i
+	@echo ... moveLogic/MoveGenerator.s
 	@echo ... pieces/Piece.obj
 	@echo ... pieces/Piece.i
 	@echo ... pieces/Piece.s

@@ -105,6 +105,12 @@
 		<Unit filename="C:/Users/Tobi/Desktop/TChess/moveLogic/Move.h">
 			<Option target="TChess"/>
 		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/moveLogic/MoveGenerator.cpp">
+			<Option target="TChess"/>
+		</Unit>
+		<Unit filename="C:/Users/Tobi/Desktop/TChess/moveLogic/MoveGenerator.h">
+			<Option target="TChess"/>
+		</Unit>
 		<Unit filename="C:/Users/Tobi/Desktop/TChess/pieces/Piece.cpp">
 			<Option target="TChess"/>
 		</Unit>

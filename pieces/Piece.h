@@ -19,9 +19,9 @@ public:
 
     enum Type {
         ROOK,
-        KNIGHT,
         BISHOP,
         QUEEN,
+        KNIGHT,
         KING,
         PAWN
     };
@@ -32,6 +32,12 @@ public:
     int pos;
 
     Piece(int value, enum Type type, int color, int pos) : color(color), type(type), value(value), pos(pos) {}
+
+    Piece(const Piece& p) :
+        color(p.color), value(p.value), type(p.type), pos(p.pos)
+        {
+            std::cout << "Copied Piece" << std::endl;
+        }
 
     friend std::ostream& operator<<(std::ostream& os, const Piece& p){
 
@@ -60,7 +66,7 @@ public:
 
 
 
-        os << "Piece: " << typeString << " pos: " << p.pos << " color: " << p.color;
+        os << " Piece: " << typeString << " pos: " << p.pos << " color: " << p.color;
         return os;
     }
 };

@@ -17,6 +17,8 @@ add_executable(TChess
         pieces/Piece.h
         pieces/Piece.cpp
         moveLogic/Move.h
-        moveLogic/Move.cpp)
+        moveLogic/Move.cpp
+        moveLogic/MoveGenerator.h
+        moveLogic/MoveGenerator.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY})

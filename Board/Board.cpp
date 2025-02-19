@@ -8,13 +8,13 @@
 
 
 Board::Board() {
-    board = {nullptr};
+    board = {std::nullopt};
     parseFen("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
     std::cout << "Created Board Sucessfully\n" << std::endl;
 }
 
 Board::Board(const std::string &fen) {
-    board = {nullptr};
+    board = {std::nullopt};
     parseFen(fen);
     std::cout << "Created Board Sucessfully\n" << std::endl;
 }

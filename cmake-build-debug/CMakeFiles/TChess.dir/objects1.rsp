@@ -1,1 +1,1 @@
-CMakeFiles/TChess.dir/GameLoop/Main.cpp.obj CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.obj CMakeFiles/TChess.dir/Board/Board.cpp.obj CMakeFiles/TChess.dir/pieces/Piece.cpp.obj CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj
+CMakeFiles/TChess.dir/GameLoop/Main.cpp.obj CMakeFiles/TChess.dir/RenderWindow/RenderWindow.cpp.obj CMakeFiles/TChess.dir/Board/Board.cpp.obj CMakeFiles/TChess.dir/pieces/Piece.cpp.obj CMakeFiles/TChess.dir/moveLogic/Move.cpp.obj CMakeFiles/TChess.dir/moveLogic/MoveGenerator.cpp.obj

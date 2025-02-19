@@ -51,6 +51,14 @@ public:
 
     void removePiece(int pos);
 
+    std::vector<std::unique_ptr<Piece>>* getWhitePieceList(){
+        return &whitePieces;
+    }
+
+    std::vector<std::unique_ptr<Piece>>* getBlackPieceList(){
+        return &blackPieces;
+    }
+
 private:
 
     Piece* whiteKing{};

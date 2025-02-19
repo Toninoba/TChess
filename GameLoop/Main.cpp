@@ -6,6 +6,7 @@
 #include "../RenderWindow/RenderWindow.h"
 #include <SDL.h>
 #include "../Board/Board.h"
+#include "../moveLogic/MoveGenerator.h"
 #include <windows.h>
 #include <cstdlib>
 
@@ -23,9 +24,13 @@ int main(int argc, char* argv[]){
 
     std::string fen = "n7/q7/3p2p1/3pR3/p3pR2/pP2B2K/1k3P2/2N5 w - - 0 1";
 
-    Board playingBoard = Board();
-
+    Board playingBoard = Board("8/8/8/8/8/8/2r5/K7 w - - 0 1");
+    MoveGenerator gen;
     Board::printBoard(playingBoard);
+
+    auto legalMoves = gen.generateLegalMoves(&playingBoard);
+
+    //Board::printBoard(playingBoard);
 
 
 
