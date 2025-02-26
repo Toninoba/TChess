@@ -24,7 +24,7 @@ int main(int argc, char* argv[]){
 
     std::string fen = "n7/q7/3p2p1/3pR3/p3pR2/pP2B2K/1k3P2/2N5 w - - 0 1";
 
-    Board playingBoard = Board("8/8/8/8/8/8/2r5/K7 w - - 0 1");
+    Board playingBoard = Board("Rr6/5b2/8/3R4/8/1K1N1r2/8/2R5 w - - 0 1");
     MoveGenerator gen;
     Board::printBoard(playingBoard);
 
