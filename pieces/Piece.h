@@ -30,14 +30,20 @@ public:
     enum Type type;
     int color;
     int pos;
+    bool alive;
 
-    Piece(int value, enum Type type, int color, int pos) : color(color), type(type), value(value), pos(pos) {}
+    Piece(int value, enum Type type, int color, int pos) : color(color), type(type), value(value), pos(pos), alive(true) {}
 
     Piece(const Piece& p) :
-        color(p.color), value(p.value), type(p.type), pos(p.pos)
+        color(p.color), value(p.value), type(p.type), pos(p.pos), alive(p.alive)
         {
             std::cout << "Copied Piece" << std::endl;
         }
+
+    Piece(Piece&& p)  noexcept :     color(p.color), value(p.value), type(p.type), pos(p.pos), alive(p.alive)
+    {
+        std::cout << "Moved Piece Object" << std::endl;
+    }
 
     friend std::ostream& operator<<(std::ostream& os, const Piece& p){
 
@@ -66,7 +72,7 @@ public:
 
 
 
-        os << " Piece: " << typeString << " pos: " << p.pos << " color: " << p.color;
+        os << " Piece: " << typeString << " pos: " << p.pos << " color: " << p.color << " alive: " << p.alive;
         return os;
     }
 };

@@ -19,7 +19,7 @@ public:
         calculateAllEdgeTiles();
     };
 
-    std::shared_ptr<std::vector<Move>> generateLegalMoves(Board* board);
+    std::vector<Move> generateLegalMoves(Board* board);
 
     int getEdgeTile(int pos, int dir);
 
@@ -35,26 +35,51 @@ private:
             {1, -1, 8, -8, 7, -7, 9, -9},      // Queen
             {-17, -15, -10, -6, 6, 10, 15, 17} // Knight
     };
-    void generateMovesForPiece(std::unique_ptr<Piece>& piece, std::vector<Move>& moveList, const Board* board, std::array<int, 64>& attackMap, std::array<int, 64>& pinnedMap);
 
-    void generateSlidingMoves(std::unique_ptr<Piece>& piece, std::vector<Move>& moveList, const Board* playingBoard, std::array<int, 64>& attackMap);
 
-    void generateKingMoves(std::unique_ptr<Piece>& piece, std::vector<Move>& moveList, const Board* playingBoard, std::array<int, 64>& attackMap, std::array<int, 64>& pinnedMap);
 
-    void generatePawnMoves(std::unique_ptr<Piece>& piece, std::vector<Move>& moveList, const Board* playingBoard, std::array<int, 64>& attackMap);
+    void generateMovesForPiece(std::unique_ptr<Piece>& piece,
+                               std::vector<Move>& moveList,
+                               const Board* board,
+                               std::array<int, 64>& attackMap,
+                               std::array<int, 64>& pinnedMap);
 
-    void generateKnightMoves(std::unique_ptr<Piece>& piece, std::vector<Move>& moveList, const Board* playingBoard, std::array<int, 64>& attackMap);
+    void generateSlidingMoves(std::unique_ptr<Piece>& piece,
+                              std::vector<Move>& moveList,
+                              const Board* playingBoard,
+                              std::array<int, 64>& attackMap,
+                              std::array<int, 64>& pinnedMap);
+
+    void generateKingMoves(Piece& piece,
+                           std::vector<Move>& moveList,
+                           const Board* playingBoard,
+                           std::array<int, 64>& attackMap,
+                           std::array<int, 64>& pinnedMap);
+
+    void generatePawnMoves(std::unique_ptr<Piece>& piece,
+                           std::vector<Move>& moveList,
+                           const Board* playingBoard,
+                           std::array<int, 64>& attackMap,
+                           std::array<int, 64> &pinnedMap);
+
+    void generateKnightMoves(std::unique_ptr<Piece>& piece,
+                             std::vector<Move>& moveList,
+                             const Board* playingBoard,
+                             std::array<int, 64>& attackMap,
+                             std::array<int, 64>& pinnedMap);
 
     void calculateAllEdgeTiles();
 
-    void removeIllegalMoves(std::shared_ptr<std::vector<Move>>& playerMoveList, std::shared_ptr<std::vector<Move>>& enemyMoveList,
-                            std::array<int, 64>& playerAttackMap, std::array<int, 64>& enemyAttackMap);
+    void removeIllegalMoves(std::vector<Move>& playerMoveList,
+                            std::vector<Move>& enemyMoveList,
+                            std::array<int, 64>& playerAttackMap,
+                            std::array<int, 64>& enemyAttackMap);
 
-    void directKingChecks(std::shared_ptr<std::vector<Move>>& playerMoveList, std::shared_ptr<std::vector<Move>>& enemyMoveList,
-                            std::array<int, 64>& playerAttackMap, std::array<int, 64>& enemyAttackMap);
+    void directKingChecks(std::vector<Move>& playerMoveList,
+                          std::vector<Move>& enemyMoveList,
+                          std::array<int, 64>& playerAttackMap,
+                          std::array<int, 64>& enemyAttackMap);
 
-    void pinnedPiecesChecks(std::shared_ptr<std::vector<Move>>& playerMoveList, std::shared_ptr<std::vector<Move>>& enemyMoveList,
-                            std::array<int, 64>& playerAttackMap, std::array<int, 64>& enemyAttackMap);
 
     bool isAttackingSlidingPiece(Piece* piece, int dir);
 

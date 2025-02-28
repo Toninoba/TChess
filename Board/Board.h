@@ -51,13 +51,61 @@ public:
 
     void removePiece(int pos);
 
-    std::vector<std::unique_ptr<Piece>>* getWhitePieceList(){
-        return &whitePieces;
+    std::vector<std::unique_ptr<Piece>>& getWhitePieceList(){
+        return whitePieces;
     }
 
-    std::vector<std::unique_ptr<Piece>>* getBlackPieceList(){
-        return &blackPieces;
+    std::vector<std::unique_ptr<Piece>>& getBlackPieceList(){
+        return blackPieces;
     }
+
+    Piece& getBlackKing(){
+        return *blackKing;
+    }
+
+    Piece& getWhiteKing(){
+        return *whiteKing;
+    }
+
+    Piece& getPlayerKing(){
+        if(turnToMove == 1){
+            return *whiteKing;
+        }
+        else{
+            return *blackKing;
+        }
+    }
+
+    Piece& getEnemyKing(){
+        if(turnToMove == 1){
+            return *blackKing;
+        }
+        else {
+            return *whiteKing;
+        }
+    }
+
+    std::vector<std::unique_ptr<Piece>>& getPlayerPieceList(){
+        if(turnToMove == 1){
+            return whitePieces;
+        }
+        else {
+            return blackPieces;
+        }
+    }
+
+    std::vector<std::unique_ptr<Piece>>& getEnemyPieceList(){
+        if(turnToMove == 1){
+            return blackPieces;
+        }
+        else {
+            return whitePieces;
+        }
+    }
+
+    void move(Move& move);
+
+    void undoMove(Move& move);
 
 private:
 

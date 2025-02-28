@@ -31,7 +31,7 @@ void Board::printBoard(const Board &b) {
             int pos = i * 8 + j;
             char pieceChar;
 
-            if (b.board[pos]) {
+            if (b.board[pos] && b.board[pos].value()->alive) {
                 Piece &p = *b.board[pos].value();
 
                 switch (p.type) {
@@ -117,14 +117,22 @@ void Board::parseFen(const std::string &fen) {
                     board[fieldPos] = whitePieces.back().get();
                     break;
                 case 'k':
-                    blackPieces.emplace_back(std::make_unique<Piece>(10, Piece::KING, -1, fieldPos));
-                    board[fieldPos] = blackPieces.back().get();
-                    this->blackKing = blackPieces.back().get();
+
+                    this->blackKing = new Piece(10, Piece::KING, -1, fieldPos);
+                    board[fieldPos] = blackKing;
+
+                    //blackPieces.emplace_back(std::make_unique<Piece>(10, Piece::KING, -1, fieldPos));
+                    //board[fieldPos] = blackPieces.back().get();
+                    //this->blackKing = blackPieces.back().get();
                     break;
                 case 'K':
-                    whitePieces.emplace_back(std::make_unique<Piece>(10, Piece::KING, 1, fieldPos));
-                    board[fieldPos] = whitePieces.back().get();
-                    this->whiteKing = whitePieces.back().get();
+                    this->whiteKing = new Piece(10, Piece::KING, 1, fieldPos);
+                    board[fieldPos] = whiteKing;
+
+
+                    //whitePieces.emplace_back(std::make_unique<Piece>(10, Piece::KING, 1, fieldPos));
+                    //board[fieldPos] = whitePieces.back().get();
+                    //this->whiteKing = whitePieces.back().get();
                     break;
                 case 'p':
                     blackPieces.emplace_back(std::make_unique<Piece>(1, Piece::PAWN, -1, fieldPos));
@@ -228,5 +236,35 @@ void Board::removePiece(int pos) {
                              });
 
     toRemoveList->erase(it, toRemoveList->end());
+}
+
+void Board::move(Move &move) {
+
+    this->board[move.to] = this->board[move.from];
+    this->board[move.from] = std::nullopt;
+
+    if(move.pieceToBeat){
+        move.pieceToBeat.value()->alive = false;
+    }
+
+    move.piece->pos = move.to;
+
+    this->turnToMove *= -1;
+
+}
+
+void Board::undoMove(Move &move) {
+
+    this->board[move.from] = this->board[move.to];
+    this->board[move.to] = std::nullopt;
+
+    if(move.pieceToBeat){
+        move.pieceToBeat.value()->alive = true;
+        this->board[move.to] = move.pieceToBeat.value();
+    }
+
+    move.piece->pos = move.from;
+
+    this->turnToMove *= -1;
 }
 
